@@ -11,7 +11,7 @@ clc;
 max_range=200;
 resolution=1;
 max_velocity=70;
-c=3*10e8;
+c=3e8;
 
 %% User Defined Range and Velocity of target
 % *%TODO* :
@@ -155,7 +155,7 @@ trainKernel=padarray(guardKernel,[Tr Td],1);
 
 % *%TODO* :
 % offset the threshold by SNR value in dB
-offset=10;
+offset=9;
 
 % *%TODO* :
 %Create a vector to store noise_level for each iteration on training cells

@@ -139,15 +139,6 @@ RDM = 10*log10(RDM) ;
 doppler_axis = linspace(-100,100,Nd);
 range_axis = linspace(-200,200,Nr/2)*((Nr/2)/400);
 figure,surf(doppler_axis,range_axis,RDM);
-%% test
-Tr=2; Td=1;
-% *%TODO* :
-%Select the number of Guard Cells in both dimensions around the Cell under 
-%test (CUT) for accurate estimation
-Gr=2; Gd=2;
-guardKernel=zeros(2*Gr+1,2*Gd+1);
-padarray(guardKernel,[Tr Td],1)
-
 
 %% CFAR implementation
 
